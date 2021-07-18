@@ -25,6 +25,7 @@ File copied from https://github.com/DCMTK/dcmtk/blob/master/dcmnet/apps/echoscu.
     ```
     $ conan install ..
     ```
+- Add `--build=missing` in case of binary not found 
 
 3. Configure the CMake project (lib is in 64 bits):
 
@@ -37,3 +38,7 @@ File copied from https://github.com/DCMTK/dcmtk/blob/master/dcmnet/apps/echoscu.
     ```
     $ cmake --build . --config Release
     ```
+
+## Others 
+- To see options from package (e.g disable openssl support)
+`conan get dcmtk/3.6.6@`
