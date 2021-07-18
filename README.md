@@ -26,10 +26,3 @@
     ```
     $ cmake --build . --config Release
     ```
-
-5. Run the application:
-
-    ```
-    $ .\bin\md5.exe
-    c3fcd3d76192e4007dfb496cca67e13b
-    ```
