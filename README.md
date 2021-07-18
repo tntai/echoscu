@@ -1,5 +1,16 @@
 # StoreSCU
+File copied from https://github.com/DCMTK/dcmtk/blob/master/dcmnet/apps/echoscu.cc
 
+## Installation steps
+1. MS Build
+- Download and install Visual Studio build tool
+
+2. Conan
+- Install Python
+- Install conan 
+    ```
+    $ pip install conan
+    ```
 
 ## Compiling steps
 
@@ -9,16 +20,16 @@
     $ mkdir build && cd build
     ```
 
-2. Install dependencies ():
+2. Install dependencies:
 
     ```
     $ conan install ..
     ```
 
-3. Configure the CMake project (Using MSVC 16 in this example):
+3. Configure the CMake project (lib is in 64 bits):
 
     ```
-    $ cmake .. -G "Visual Studio 15 2017"
+    $ cmake .. -G "Visual Studio 15 2017" -A x64
     ```
 
 4. Build it:
