@@ -47,7 +47,7 @@ jobs:
       # uses: anton-yurchenko/git-release@03d3d85ec613c4ce4a71bdd251a3a835dd25295c
       uses: anton-yurchenko/git-release@v4.1.0
       env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE-TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
         # Release Assets
         args: ${{env.SOLUTION_FILE_PATH}}/build/${{env.BUILD_CONFIGURATION}}/*.exe
