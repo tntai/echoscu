@@ -1,8 +1,0 @@
-[requires]
-dcmtk/3.6.6
-
-[generators]
-cmake
-
-[options]
-    dcmtk:with_openssl=False
