@@ -19,7 +19,6 @@ endif()
 include(${CMAKE_BINARY_DIR}/conan.cmake)
 
 conan_cmake_configure(REQUIRES dcmtk/3.6.6
-                      OPTIONS  dcmtk:with_openssl=False
                       GENERATORS cmake_find_package)
 
 conan_cmake_autodetect(settings)
