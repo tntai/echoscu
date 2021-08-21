@@ -5,12 +5,7 @@ File copied from https://github.com/DCMTK/dcmtk/blob/master/dcmnet/apps/echoscu.
 1. MS Build
 - Download and install Visual Studio build tool
 
-2. Conan
-- Install Python
-- Install conan 
-    ```
-    $ pip install conan
-    ```
+2. Cmake
 
 ## Compiling steps
 
@@ -20,20 +15,13 @@ File copied from https://github.com/DCMTK/dcmtk/blob/master/dcmnet/apps/echoscu.
     $ mkdir build && cd build
     ```
 
-2. Install dependencies:
-
-    ```
-    $ conan install ..
-    ```
-- Add `--build=missing` in case of binary not found 
-
-3. Configure the CMake project (lib is in 64 bits):
+2. Configure the CMake project (lib is in 64 bits):
 
     ```
     $ cmake .. -G "Visual Studio 15 2017" -A x64
     ```
 
-4. Build it:
+3. Build it:
 
     ```
     $ cmake --build . --config Release
