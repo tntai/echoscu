@@ -31,7 +31,5 @@ conan_cmake_install(PATH_OR_REFERENCE .
 
 find_package(dcmtk)
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${DCMTK_INCLUDE_DIRS})
-
 add_executable(${PROJECT_NAME} echoscu.cc)
-target_link_libraries(${PROJECT_NAME})
+target_link_libraries(${PROJECT_NAME} DCMTK::dcmpstat DCMTK::dcmnet DCMTK::dcmfg DCMTK::dcmdata DCMTK::oflog DCMTK::ofstd)
