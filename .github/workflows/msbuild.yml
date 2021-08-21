@@ -1,9 +1,9 @@
 name: MSBuild
 
 on: 
-  release:
-    type:
-      - created 
+  push:
+    tag:
+      - '*' 
 
 env:
   # Path to the solution file relative to the root of the project.
